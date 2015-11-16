@@ -93,3 +93,6 @@ li > .delete:hover {
     color: #CF2323;
 }
 
+#saved-notes textarea {
+    display: none;
+}
