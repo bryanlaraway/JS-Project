@@ -7,19 +7,21 @@
 </head>
 <body>
 <div class="container">
-    <p>
-        <label for="new-title">Add Note</label><br>
-        </p>
-    <p id="">
+    <div>
+        <label for="new-title">Add Note</label>
+    </div>
 
-        <label for="new-title">Title</label><input id="new-title" type="text"><br>
-        <label for="new-note"></label><textarea id="new-note">placeholder text</textarea><button id="save-button">Save</button><br>
-    </p>
+    <div>
+        <label for="new-title">Note</label><input id="new-title" type="text" onfocus="if(this.value == 'Add title') { this.value = ''; }" value="Add title" >
+    </div>
+    <div>
+        <label for="new-note"></label><textarea id="new-note" onfocus="if(this.value == 'Add note text') { this.value = ''; }" >Add note text</textarea><button id="save-button">Save</button>
+    </div>
     <h3>
         <label>Notes</label>
         <ul id="saved-notes">
-            <li><label>CSS Notes</label><textarea>placeholder text</textarea><button class="view">View</button><button class="edit">Edit</button><button class="delete">Delete</button></li>
-            <li><label>HTML Notes</label><textarea>placeholder text</textarea><button class="view">View</button><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            <li><label>CSS Notes</label><textarea>CSS can work wonders for your design.</textarea><button class="view">View</button><button class="delete">Delete</button></li>
+            <li><label>HTML Notes</label><textarea>HTML is really cool!</textarea><button class="view">View</button><button class="delete">Delete</button></li>
         </ul>
     </h3>
 </div>
