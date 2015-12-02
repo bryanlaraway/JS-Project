@@ -21,6 +21,7 @@ input, button, textarea {
 
 #new-title {
     margin: 5px 0 5px 0;
+    padding: 5px 5px;
     font-size: 15px;
 }
 
@@ -29,6 +30,7 @@ input, button, textarea {
     height: 300px;
     font-size: 15px;
     margin: 5px 0 5px 0;
+    padding: 5px 5px;
 }
 
 button {
@@ -60,7 +62,7 @@ label[for='new-note'] {
     font-weight: 700;
     font-size: 15px;
     border-bottom: 2px solid #333;
-    padding: 30px 0 10px;
+    padding: 30px 5px 10px;
     margin: 0;
     /*text-transform: uppercase;*/
 }

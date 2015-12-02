@@ -7,12 +7,12 @@
 </head>
 <body>
 <div class="container">
-    <div>
-        <label for="new-title">Add Note</label>
+    <div id="app-title">
+        <h1>Note Taker App</h1>
     </div>
 
     <div>
-        <label for="new-title">Note</label><input id="new-title" type="text" onfocus="if(this.value == 'Add title') { this.value = ''; }" value="Add title" >
+        <input id="new-title" type="text" onfocus="if(this.value == 'Add title') { this.value = ''; }" value="Add title" >
     </div>
     <div>
         <label for="new-note"></label><textarea id="new-note" onfocus="if(this.value == 'Add note text') { this.value = ''; }" >Add note text</textarea><button id="save-button">Save</button>

@@ -2,6 +2,9 @@ var $title = $("#new-title");
 var $noteText = $("#new-note");
 var placeHolderTitle = "Add title";
 var placeHolderText = "Add note text";
+var savedNoteTitle = '';
+var savedNoteText = '';
+
 
 var noteTitleInput = document.getElementById("new-title");
 var noteTextInput = document.getElementById("new-note");
@@ -21,7 +24,7 @@ function canSave() {
     return isTitlePresent() && isNoteTextPresent();
 }
 
-function canEdit() {
+function canView() {
     return !isTitlePresent() && !isNoteTextPresent();
 }
 
@@ -82,6 +85,8 @@ var moveNoteToEditor = function(noteItem) {
     var ul = noteItem.parentNode;
     noteTitleInput.value = noteItem.childNodes[0].innerText;
     noteTextInput.value = noteItem.childNodes[1].innerText;
+    var savedNoteTitle = noteItem.childNodes[0].innerText;
+    var savedNoteText = noteItem.childNodes[1].innerText;
     ul.removeChild(noteItem);
 };
 
